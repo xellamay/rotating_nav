@@ -1,44 +1,100 @@
-  h1 {
+h1 {
     margin: 0;
-  }
+}
 
-  h3 {
+h3 {
     margin-top: 15px;
-  }
+}
   
-  p {
+p {
     margin: 15px 0;
     line-height: 1.5;
     letter-spacing: 0.5pt;
-  }
+}
+  
+small {
+    font-size: smaller;
+    font-style: italic;
+    color: #555;
+}
 
-  img {
+img {
     width: 100%;
     max-width: 100%;
-  }
+}
   
-  *,
-  *:before,
-  *:after {
+*,
+*:before,
+*:after {
     box-sizing: border-box;
-  }  
+}  
 
 body {
     margin: 0;
     font-family: 'Lato', sans-serif;
     color: black;
     display: flex;
+    background-color: #555;
+    overflow-x: hidden;
 }
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+.main {
+    width: 100%;
+    background-color: rgb(252, 254, 255);
+    transform-origin: top left;
+    transition: 1.5s;
+}
+
+.main_open {
+    transform: rotate(-15deg);
+}
+
 
 .container {
     max-width: 1000px;
-    height: 100vh;
     margin: 0 auto;
     padding-top: 80px;
+    position: relative;
 }
 
-small {
-    font-size: smaller;
-    font-style: italic;
-    color: #555;
+.menu {
+    position: fixed;
+    top: -100px;
+    left: -100px;
+    z-index: 1;
+    transition: 1.5s;
+}
+
+.menu_open {
+    transform: rotate(-88deg)
+}
+
+.menu__circle {
+    background-color: #ff7979;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.menu__btn {
+    position: absolute;
+    color: aliceblue;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.menu__btn_open {
+    bottom: 36px;
+    left: 126px;
+}
+
+.menu__btn_close {
+    bottom: 42px;
+    left: 50px;
+    font-size: 30px;
 }
