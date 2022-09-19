@@ -11,6 +11,11 @@ p {
     line-height: 1.5;
     letter-spacing: 0.5pt;
 }
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
   
 small {
     font-size: smaller;
@@ -51,7 +56,7 @@ button {
 }
 
 .main_open {
-    transform: rotate(-15deg);
+    transform: rotate(-25deg);
 }
 
 
@@ -98,3 +103,29 @@ button {
     left: 50px;
     font-size: 30px;
 }
+
+.nav { 
+    display: block;
+    position: fixed;
+    padding: 10px;
+    bottom: 54px;
+    left: -220px;
+    list-style: none;
+}
+
+.nav__item {
+    margin: 40px 0;
+}
+
+.nav__item_home {
+   
+}
+
+.nav__item_about {
+    margin-left: 30px;
+}
+
+.nav__item_contact {
+    margin-left: 64px;
+}
+

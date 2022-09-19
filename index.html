@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="menu">
+    <div class="menu" id="menu">
         <div class="menu__circle"></div>
         <button class="menu__btn menu__btn_open" id="btn_open">
             <i class="fa-solid fa-bars"></i>
@@ -18,7 +18,7 @@
             <i class="fa fa-times" aria-hidden="true"></i>
         </button>
     </div>
-    <main class="main">
+    <main class="main" id="main">
         <div class="container">
             <div class="content">
                 <h1>Amazing Article</h1>
@@ -30,20 +30,22 @@
             </div>
         </div>
     </main>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item nav__item_home">
+                <a href="#"><i class="fa-solid fa-house"></i> HOME</a>
+            </li>
+            <li class="nav__item nav__item_about"> 
+                <a href="#"><i class="fa-solid fa-address-card"></i> ABOUT</a>
+            </li>
+            <li class="nav__item nav__item_contact">
+                <a href="#"><i class="fa-solid fa-envelope"></i> CONTACT</a>
+            </li>
+        </ul>
+    
+    </nav>
     
 </body>
 
 <script src="scripts.js"></script>
 </html>
-
-
-
-
-
-<!-- <div class="circle"></div>
-<button class="open">
-    <i class="fa-solid fa-bars"></i>
-</button>
-<button class="close">
-    <i class="fa fa-times" aria-hidden="true"></i>
-</button> -->
