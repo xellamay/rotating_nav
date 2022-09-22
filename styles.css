@@ -16,6 +16,11 @@ a {
     text-decoration: none;
     color: aliceblue;
 }
+
+a:hover {
+    color: #ff7979;
+    transition: 0.2s;
+}
   
 small {
     font-size: smaller;
@@ -46,6 +51,10 @@ body {
 button {
     border: none;
     background-color: transparent;
+}
+
+ul {
+    list-style-type: none;
 }
 
 .main {
@@ -110,15 +119,10 @@ button {
     padding: 10px;
     bottom: 54px;
     left: -220px;
-    list-style: none;
 }
 
 .nav__item {
     margin: 40px 0;
-}
-
-.nav__item_home {
-   
 }
 
 .nav__item_about {
@@ -129,3 +133,13 @@ button {
     margin-left: 64px;
 }
 
+.nav__open {
+    transform: translateX(100%);
+    transition: transform 0.9s ease;
+    transition-delay: 0.2s;
+}
+
+.nav__close {
+    transform: translateX(-100%);
+    transition: transform 1s ease-in;
+}
